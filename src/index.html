@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Todo list",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+   <main class="main" id='main'>
+      <div class="todo">
+         <h1 class="todo__headling">todos</h1>
+         <div class="todo__wrapper">
+            <input class="todo__input" type="text" name="" id="" placeholder="What needs to be done?">
+            <ul class="todo__list">
+            </ul>
+            <footer class="footer">
+               <div class="footer__count"><span class="footer__numb">1</span> items left</div>
+               <ul class="footer__filters">
+                  <li>
+                     <label class="footer__radio">
+                        <input type="radio" name="filter" value="all" checked>
+                        <span class="footer__radio-text">all</span>
+                     </label>
+                  </li>
+                  <li>
+                     <label class="footer__radio">
+                        <input type="radio" name="filter" value="active">
+                        <span class="footer__radio-text">active</span>
+                     </label>
+                  </li>
+                  <li>
+                     <label class="footer__radio">
+                        <input type="radio" name="filter" value="completed">
+                        <span class="footer__radio-text">completed</span>
+                     </label>
+                  </li>
+               </ul>
+               <button class="footer__clear">Clear completed</button>
+            </footer>
+         </div>
+      </div>
+      <p class="creater">Double - click to edit a todo</p>
+      <p class="creater">Made by Atav</p>
+   </main>
+   @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
